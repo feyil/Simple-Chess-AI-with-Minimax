@@ -1,6 +1,6 @@
 import chess
 import random
-from threading import Lock, Thread
+
 '''
 	Your Code Will Come Here
 '''
@@ -23,7 +23,7 @@ def ai_play(board):
 	
 	print("Thinking...")
 	# play = minimax_ai_play(board, 5, get_turn(board))
-	play = alpha_beta_minimax(board, 5, negative_infinity(), positive_infinity(), get_turn(board))[1]
+	play = alpha_beta_minimax(board, 3, negative_infinity(), positive_infinity(), get_turn(board))[1]
 	print("Thinking Finished...")
 	
 	print("Played move:" + play)
@@ -110,7 +110,7 @@ def alpha_beta_minimax(board, depth, alpha, beta, maximizingPlayer):
 			
 
 			# value = max(value, alpha_beta_minimax(board, depth - 1, alpha, beta, get_turn(board)))
-			unmake_last_move(board)
+			unmake_last_move(board) # parent board
 
 			alpha = max(alpha, value)
 			if(alpha >= beta):
@@ -130,7 +130,7 @@ def alpha_beta_minimax(board, depth, alpha, beta, maximizingPlayer):
 
 
 			# value = min(value, alpha_beta_minimax(board, depth - 1, alpha, beta, get_turn(board)))
-			unmake_last_move(board)
+			unmake_last_move(board) # parent board
 
 			beta = min(beta, value)
 			if(alpha >= beta):
