@@ -82,6 +82,8 @@ function alphabeta(node, depth, α, β, maximizingPlayer) is
 
 #### Setup
 
+* I like to use python virtualenvwrapper you look my repo to learn how to use it: https://github.com/feyil/Virtualenv-Virtualenvwrapper-Usage
+
 ```bash
 $ mkvirtualenv ai-chess -p python3
 $ workon ai-chess
@@ -89,3 +91,12 @@ $ workon ai-chess
 (ai-chess)$ pip install python-chess
 (ai-chess)$ python main.py
 ```
+
+* You can change the initial board used inside of the main.py file
+
+```python
+board = chess.Board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1") #initial board is created here
+```
+
+
+![alt text](https://github.com/feyil/Simple-Chess-AI-with-Minimax/blob/master/screenshots/chess-1.png "chess-1")
