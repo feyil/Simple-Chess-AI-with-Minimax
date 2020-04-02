@@ -91,6 +91,11 @@ $ workon ai-chess
 (ai-chess)$ pip install python-chess
 (ai-chess)$ python main.py
 ```
+* You can also use provided requirements.txt file after you set up the environment for the pip installs.
+
+```bash
+(ai-chess)$ pip install -r requirements.txt
+```
 
 * You can change the initial board used inside of the main.py file
 
