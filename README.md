@@ -95,7 +95,8 @@ $ workon ai-chess
 * You can change the initial board used inside of the main.py file
 
 ```python
-board = chess.Board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1") #initial board is created here
+#initial board is created here
+board = chess.Board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1") 
 ```
 
 
