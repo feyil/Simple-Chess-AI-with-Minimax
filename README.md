@@ -38,7 +38,7 @@ starting board) and calculates the best possible move. The program should play a
 
 ### Implementation and Result Showcase
 
-* The implementation of chess_ai.py file provided by me as a solution. This file includes neccessary functions. I implemented two version of minimax algorithm with functions names:
+* The implementation of chess_ai.py file provided by me as a solution. This file includes neccessary functions. I implemented two version of minimax algorithm with function names:
 - minimax_ai_play(board, depth, maximizingPlayer)
 - alpha_beta_minimax(board, depth, alpha, beta, maximizingPlayer)
 
