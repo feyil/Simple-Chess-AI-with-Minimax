@@ -82,7 +82,7 @@ function alphabeta(node, depth, α, β, maximizingPlayer) is
 
 #### Setup
 
-* I like to use python virtualenvwrapper you look my repo to learn how to use it: https://github.com/feyil/Virtualenv-Virtualenvwrapper-Usage
+* I like to use python virtualenvwrapper you can look my repo to learn how to use it: https://github.com/feyil/Virtualenv-Virtualenvwrapper-Usage
 
 ```bash
 $ mkvirtualenv ai-chess -p python3
