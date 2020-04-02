@@ -42,10 +42,10 @@ starting board) and calculates the best possible move. The program should play a
 - minimax_ai_play(board, depth, maximizingPlayer)
 - alpha_beta_minimax(board, depth, alpha, beta, maximizingPlayer)
 
-* I have used below pseudocodes which can be found in (https://en.wikipedia.org/wiki/Minimax). The main purpose was to understand the core mechanism of the algorithms. Therefore implementations made far away from production readiness. In this aspect, I'm always open to feedback.
+* I have used below pseudocodes which can be found in (https://en.wikipedia.org/wiki/Minimax and https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning). The main purpose was to understand the core mechanism of the algorithms. Therefore implementations made far away from production readiness. In this aspect, I'm always open to feedback.
 
 ```
-    function minimax(node, depth, maximizingPlayer) is
+function minimax(node, depth, maximizingPlayer) is
     if depth = 0 or node is a terminal node then
         return the heuristic value of node
     if maximizingPlayer then
@@ -59,7 +59,7 @@ starting board) and calculates the best possible move. The program should play a
             value := min(value, minimax(child, depth − 1, TRUE))
         return value
 
-    function alphabeta(node, depth, α, β, maximizingPlayer) is
+function alphabeta(node, depth, α, β, maximizingPlayer) is
     if depth = 0 or node is a terminal node then
         return the heuristic value of node
     if maximizingPlayer then
@@ -78,4 +78,14 @@ starting board) and calculates the best possible move. The program should play a
             if α ≥ β then
                 break (* α cut-off *)
         return value
+```
+
+#### Setup
+
+```bash
+$ mkvirtualenv ai-chess -p python3
+$ workon ai-chess
+(ai-chess)$ pip install PyQt5
+(ai-chess)$ pip install python-chess
+(ai-chess)$ python main.py
 ```
